@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cadastro de Telefones</title>
+
+        <script src="utilities.js"></script>
+        <script src="formulario_telefone.js"></script>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <center>
+            <h1>Cadastro de Telefones</h1>
+        </center>
+
+        <br>
+
+        <div class="buttons-div">
+            <button onclick="window.location.href = 'index.html'">Voltar</button>
+        </div>
+
+        <div class="table-div">
+            <form id="telefoneForm" style="margin-left:5%">
+                <label for="idPessoa">Pessoa:</label><br>
+                <select id="idPessoa" name="idPessoa">
+                    <option value="0">...</option>
+                </select><br>
+                <label for="ddd">DDD:</label><br>
+                <input type="text" id="ddd" name="ddd"><br>
+
+                <label for="numero">Número:</label><br>
+                <input type="text" id="numero" name="numero"><br><br>
+
+                <button id="enviarFormulario">Enviar</button>
+            </form>
+        </div>
+        
+            
+    </body>
+</html>
