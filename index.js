@@ -10,9 +10,6 @@ function AoCarregarPagina() {
 function CarregarTelefones() {
     var telefones = Requisicao('/telefones', 'GET');
 
-    console.log("Telefones:");
-    console.log(telefones);
-
     var tableTelefones = document.getElementById("tableTelefones");
     var trAtual = false;
     for (i in telefones) {
@@ -27,7 +24,8 @@ function CarregarTelefones() {
         let infoTelefone = "";
         // --- Preenche as informações de cada telefone ---
             let infoPessoa = Requisicao("/pessoa/" + telefone.idPessoa, 'GET');
-            infoTelefone += infoPessoa.nome + ": ";
+            infoTelefone += infoPessoa?.nome + ": ";
+
             infoTelefone += "(" + telefone.ddd + ") ";
             infoTelefone += telefone.numero;
         // ------------------------------------------------

@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pessoas</title>
-    <script src="cadastro_pessoa.js"></script>
-</head>
-<body>
-    <h1>Cadastro de Pessoas</h1>
-    <form id="pessoaForm">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome"><br>
-        <label for="cpfOuCnpj">CPF ou CNPJ:</label><br>
-        <input type="text" id="cpfOuCnpj" name="cpfOuCnpj"><br><br>
-        <button type="submit">Enviar</button>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cadastro de Pessoas</title>
+
+        <script src="utilities.js"></script>
+        <script src="formulario_pessoa.js"></script>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <center>
+            <h1>Cadastro de Pessoas</h1>
+        </center>
+
+        <br>
+
+        <div class="buttons-div">
+            <button onclick="window.location.href = 'pessoas.html'">Voltar</button>
+        </div>
+
+        <div class="table-div">
+            <form id="pessoaForm" style="margin-left:5%">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+
+                <label for="cpfOuCnpj">CPF/CNPJ:</label><br>
+                <input type="text" id="cpfOuCnpj" name="cpfOuCnpj"><br><br>
+
+                <button id="enviarFormulario">Enviar</button>
+            </form>
+        </div>
+        
+            
+    </body>
 </html>
