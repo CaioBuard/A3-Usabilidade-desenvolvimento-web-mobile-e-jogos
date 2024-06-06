@@ -13,28 +13,31 @@
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <center>
-            <h1>Cadastro de Pessoas</h1>
-        </center>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="container-fluid">
 
-        <br>
+                <div class="text-center mb-5">
+                    <h1>Cadastro de Pessoas</h1>
+                </div>
 
-        <div class="buttons-div">
-            <button onclick="window.location.href = 'pessoas.html'">Voltar</button>
+                <div class="table-div">
+                    <form id="pessoaForm">
+                        <div class="mb-3">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cpfOuCnpj">CPF/CNPJ:</label>
+                            <input type="number" class="form-control" id="cpfOuCnpj" name="cpfOuCnpj">
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button type="submit" id="enviarFormulario" class="btn btn-success">Enviar</button>
+                            <button style="margin-left:10px" type="button" class="btn btn-primary" onclick="window.location.href='pessoas.html'">Voltar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
         </div>
-
-        <div class="table-div">
-            <form id="pessoaForm" style="margin-left:5%">
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome"><br>
-
-                <label for="cpfOuCnpj">CPF/CNPJ:</label><br>
-                <input type="text" id="cpfOuCnpj" name="cpfOuCnpj"><br><br>
-
-                <button id="enviarFormulario">Enviar</button>
-            </form>
-        </div>
-        
-            
     </body>
 </html>

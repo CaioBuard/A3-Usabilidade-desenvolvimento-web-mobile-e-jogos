@@ -13,32 +13,37 @@
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <center>
-            <h1>Cadastro de Telefones</h1>
-        </center>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="container-fluid">
 
-        <br>
+            <div class="text-center mb-5">
+                <h1>Cadastro de Telefones</h1>
+            </div>
 
-        <div class="buttons-div">
-            <button onclick="window.location.href = 'index.html'">Voltar</button>
+            <div class="table-div">
+                <form id="telefoneForm">
+                    <div class="mb-3">
+                        <label for="idPessoa">Pessoa:</label>
+                        <select class="form-control" id="idPessoa" name="idPessoa">
+                            <option value="0">...</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ddd">DDD:</label>
+                        <input type="number" class="form-control" id="ddd" name="ddd">
+                    </div>
+                    <div class="mb-3">
+                        <label for="numero">Número:</label>
+                        <input type="number" class="form-control" id="numero" name="numero">
+                    </div>
+                    <div class="d-flex justify-content-end mt-3">
+                        <button type="submit" class="btn btn-success" id="enviarFormulario">Enviar</button>
+                        <button style="margin-left:10px" type="button" class="btn btn-primary" onclick="window.location.href='index.html'">Voltar</button>
+                    </div>    
+                </form>
+            </div>
+
         </div>
-
-        <div class="table-div">
-            <form id="telefoneForm" style="margin-left:5%">
-                <label for="idPessoa">Pessoa:</label><br>
-                <select id="idPessoa" name="idPessoa">
-                    <option value="0">...</option>
-                </select><br>
-                <label for="ddd">DDD:</label><br>
-                <input type="text" id="ddd" name="ddd"><br>
-
-                <label for="numero">Número:</label><br>
-                <input type="text" id="numero" name="numero"><br><br>
-
-                <button id="enviarFormulario">Enviar</button>
-            </form>
-        </div>
-        
-            
+    </div>
     </body>
 </html>
